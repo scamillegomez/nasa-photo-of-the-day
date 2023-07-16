@@ -22,8 +22,8 @@ function App() {
         .get(`https://api.nasa.gov/planetary/apod?api_key=6FB9nBzjZDiVRO53lSdVVOHGToAH4ohYvJJlsyMF`)
         // .then(res=>console.log(res.data))
         .then((res)=>{
-          setData(res.data);
-          // console.log(res.data);
+           setData(res.data);
+          //  console.log(res.data.url);
         })
         .catch(err=>console.log(err));
     }
